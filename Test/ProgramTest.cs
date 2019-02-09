@@ -24,6 +24,7 @@ namespace Test
                 var result = sw.ToString().Replace(Environment.NewLine, "");
 
                 Assert.EndsWith("Scott!", result);
+                Assert.StartsWith("Hello ", result);
                 Assert.True(result.Length > "Hello !".Length);
             }
         }
